@@ -12,11 +12,15 @@
 body {
   width: 100vw;
   height: 100vh;
+  max-width: 100%;
 }
 
 #home-grid-wrapper {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: minmax(80px, 1fr) minmax(200px, 1520px) minmax(
+      80px,
+      1fr
+    );
   grid-template-rows: minmax(100vh, 1000px) 645px 1000px 370px 645px 1000px 645px 830px 500px;
   gap: 20px;
 
@@ -28,9 +32,9 @@ body {
     ". li ."
     "re re re"
     ". ra ."
+    "ml ml ml"
     ". fo .";
 
-  width: 100%;
   background: var(--primary);
 }
 
