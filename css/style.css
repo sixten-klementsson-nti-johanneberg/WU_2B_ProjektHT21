@@ -271,9 +271,36 @@ body {
   box-shadow: -26px 32px var(--dark);
   border-radius: 20px;
 }
-#reservation {
+#reservations {
   grid-area: re;
   background: var(--dark);
+}
+
+#reservations-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  height: 100%;
+  width: 100%;
+  min-width: 200px;
+  max-width: 1520px;
+  margin: 0 200px;
+}
+
+#reservations-btn {
+  margin-top: 80px;
+}
+
+#reservations-image img {
+  width: 750px;
+  grid-area: re;
+  background: var(--dark);
+}
+
+#map {
+  width: 620px;
+  height: 405px;
 }
 
 #location-info {

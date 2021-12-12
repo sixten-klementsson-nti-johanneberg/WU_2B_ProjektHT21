@@ -109,8 +109,23 @@
         </div>
       </section>
 
-      <section id="reservation"></section>
-      <section id="location-info"></section>
+      <section id="reservations">
+        <div id="reservations-inner">
+          <div id="reservations-left">
+            <h2>De bästa borden</h2>
+            <p>Enim commodi et eveniet odio. Quidem saepe error et.</p>
+            <button id="reservations-btn"><a href="">RESERVERA NU</a></button>
+          </div>
+
+          <div id="reservations-image">
+            <img src="./img/burger.png" alt="En utklipp hamburgare" />
+          </div>
+        </div>
+      </section>
+
+      <section id="location-info">
+        <div id="map"></div>
+      </section>
       <section id="mailing-list"></section>
 
       <footer class="footer"></footer>
@@ -119,7 +134,14 @@
     <!-- För att skapa parallax effekten, gör möjligtvis en egen variant senare -->
     <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.5.1/dist/simpleParallax.min.js"></script>
 
+    <!-- Google maps kartan som finns på hemsidan -->
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap&libraries=&v=weekly"
+      async
+    ></script>
+
     <script src="./js/header.js"></script>
     <script src="./js/pizzaParallax.js"></script>
+    <script src="./js/googleKarta.js"></script>
   </body>
 </html>
