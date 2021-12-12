@@ -67,7 +67,6 @@ body {
       1fr
     );
   grid-template-rows: minmax(100vh, 1000px) 645px 1000px 370px 645px 1000px 645px 830px 500px;
-  gap: 20px;
 
   grid-template-areas:
     "af af af"
@@ -94,6 +93,7 @@ body {
   height: 150px;
   width: 100%;
   background: none;
+  z-index: 10;
 }
 
 .header-onscroll {
@@ -162,7 +162,7 @@ body {
 }
 
 #above-fold-content-btn {
-  margin-top: 50px;
+  margin-top: 80px;
 }
 
 #welcome {
@@ -183,8 +183,21 @@ body {
 }
 
 #menu {
+  display: grid;
+  grid-template-columns: minmax(80px, 1fr) minmax(200px, 1520px) minmax(
+      80px,
+      1fr
+    );
+  grid-template-rows: 100%;
+  gap: 20px;
+  grid-template-areas: "mi mr .";
+
   grid-area: me;
   background: var(--dark);
+}
+
+#menu-image {
+  grid-area: mi;
 }
 
 #menu-image,
@@ -192,20 +205,79 @@ body {
   height: 100%;
 }
 
+#menu-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+
+  grid-area: mr;
+}
+
+#menu-right p {
+  max-width: 650px;
+  text-align: right;
+}
+
+#menu-btn {
+  margin-top: 80px;
+}
+
 #pizza-divider {
   grid-area: pd;
+  height: 100%;
+  overflow: hidden;
+}
+
+#pizza-divider img {
+  position: relative;
+  bottom: 300px;
+  width: 100%;
+  object-fit: cover;
+  object-position: bottom;
+}
+
+#testimonials {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  grid-area: te;
+}
+
+#testimonials-text {
+  width: 750px;
+}
+
+#testimonials-text-customer-wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 350px;
+  align-items: center;
+  margin-top: 30px;
+}
+
+#testimonials-text-customer {
+  font-style: italic;
+}
+
+#testimonials-text-line {
+  width: 50px;
+  height: 0;
+  border: 1px solid var(--light);
+}
+
+#testimonials-image img {
+  box-shadow: -26px 32px var(--dark);
+  border-radius: 20px;
+}
+#reservation {
+  grid-area: re;
+  background: var(--dark);
 }
 
 #location-info {
   grid-area: li;
-}
-
-#reservation {
-  grid-area: re;
-}
-
-#testimonials {
-  grid-area: te;
 }
 
 #mailing-list {

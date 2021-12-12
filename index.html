@@ -73,19 +73,53 @@
 
       <section id="menu">
         <div id="menu-image">
-          <img src="./img/pizza_from_side.png" alt="Large cutout pizza" />
+          <img src="./img/pizza_from_side.png" alt="En rund utklipp pizza" />
+        </div>
+
+        <div id="menu-right">
+          <h2>Prisvärdig mat</h2>
+          <p>Enim commodi et eveniet odio. Quidem saepe error et.</p>
+          <button id="menu-btn"><a href="">UTFORSKA MENYN</a></button>
         </div>
       </section>
 
-      <section id="pizza-divider"></section>
-      <section id="location-info"></section>
+      <section id="pizza-divider">
+        <img src="./img/greasy_pizza.jpg" alt="Närbild av en flottig pizza" />
+      </section>
+
+      <section id="testimonials">
+        <div id="testimonials-image">
+          <img
+            src="./img/testimonial_woman.png"
+            alt="En nöjd kund sitter på en stol med resturangen i bakgrunden"
+          />
+        </div>
+
+        <div id="testimonials-text">
+          <p>
+            “Det var en fantastisk upplevelse med en mycket välkomnande och
+            charmig atmosfär. Personalen är kunnig och ger bra
+            rekommendationer.”
+          </p>
+
+          <div id="testimonials-text-customer-wrapper">
+            <span id="testimonials-text-line"></span>
+            <p id="testimonials-text-customer">Elizabeth Holmes</p>
+          </div>
+        </div>
+      </section>
+
       <section id="reservation"></section>
-      <section id="testimonials"></section>
+      <section id="location-info"></section>
       <section id="mailing-list"></section>
 
       <footer class="footer"></footer>
     </div>
 
+    <!-- För att skapa parallax effekten, gör möjligtvis en egen variant senare -->
+    <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.5.1/dist/simpleParallax.min.js"></script>
+
     <script src="./js/header.js"></script>
+    <script src="./js/pizzaParallax.js"></script>
   </body>
 </html>
