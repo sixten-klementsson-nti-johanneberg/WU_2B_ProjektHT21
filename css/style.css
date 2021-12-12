@@ -1,18 +1,63 @@
 :root {
-  --background: #151313;
-  --primary: #b73e06;
+  --primary: #b21e1e;
+  --light: #f5ebd3;
+  --dark: #1b1b1b;
 }
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  color: var(--light);
+  font-family: "Montserrat", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Arvo", serif;
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 6rem;
+}
+
+h2 {
+  font-size: 4.5rem;
+}
+
+p,
+a {
+  font-size: 1.875rem;
+}
+
+button {
+  width: 370px;
+  height: 80px;
+
+  background: var(--primary);
+  border-radius: 20px;
+  border: none;
+}
+
+button a {
+  text-decoration: none;
 }
 
 body {
   width: 100vw;
   height: 100vh;
   max-width: 100%;
+}
+
+#dark-filler {
+  width: 100%;
+  height: 100%;
+  background: var(--dark);
 }
 
 #home-grid-wrapper {
@@ -29,41 +74,122 @@ body {
     ". we ."
     "me me me"
     "pd pd pd"
-    ". li ."
+    ". te ."
     "re re re"
-    ". ra ."
-    "ml ml ml"
+    ". li ."
+    ". ml ml"
     ". fo .";
 
   background: var(--primary);
 }
 
-#header {
+.header {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: flex-end;
 
   position: absolute;
   top: 0;
 
+  height: 150px;
   width: 100%;
+  background: none;
+}
+
+.header-onscroll {
+  position: fixed;
+  background: var(--dark);
+
+  align-items: center;
+  height: 90px;
+
+  transition: all 0.25s ease;
+}
+
+.inner-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 100%;
+  max-width: 1520px;
+  min-width: 200px;
+  margin: 0 200px;
+}
+
+.navigation {
+  width: 100%;
+  max-width: 900px;
+}
+
+.navigation ul {
+  display: flex;
+  justify-content: space-between;
+
+  list-style: none;
+
+  width: 100%;
+  font-size: 1.9rem;
+}
+
+.navigation ul a {
+  text-decoration: none;
+}
+
+.navigation ul a:hover {
+  color: var(--primary);
 }
 
 #above-fold {
-  background-color: var(--background);
-  background-image: url("../img/hem_bakgrund.png");
+  background-color: #000000;
+  background-image: url("../img/home_background.png");
   background-size: cover;
 
   width: 100%;
   grid-area: af;
 }
 
+#above-fold-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  height: 100%;
+  width: 100%;
+  min-width: 200px;
+  max-width: 1520px;
+  margin: 0 200px;
+}
+
+#above-fold-content-btn {
+  margin-top: 50px;
+}
+
 #welcome {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
   grid-area: we;
+}
+
+#welcome-text {
+  width: 750px;
+}
+
+#welcome-image img {
+  box-shadow: 26px 32px var(--dark);
+  border-radius: 20px;
 }
 
 #menu {
   grid-area: me;
-  background: black;
+  background: var(--dark);
+}
+
+#menu-image,
+#menu-image img {
+  height: 100%;
 }
 
 #pizza-divider {
@@ -78,8 +204,8 @@ body {
   grid-area: re;
 }
 
-#ratings {
-  grid-area: ra;
+#testimonials {
+  grid-area: te;
 }
 
 #mailing-list {

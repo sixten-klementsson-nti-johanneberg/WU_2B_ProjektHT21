@@ -1,45 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Arvo:wght@700&family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content=width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
     <title>Lyxig Snabbmat</title>
-</head>
+  </head>
 
-<body>
-
+  <body>
     <div id="home-grid-wrapper">
+      <section id="above-fold">
+        <header class="header">
+          <div class="inner-header">
+            <div
+              class="header-logo"
+              style="
+                width: 75px;
+                height: 75px;
+                background: #f5ebd3;
+                border-radius: 50%;
+              "
+            ></div>
 
-        <section id="above-fold">
-            <header id="header">
-                <div class="header-logo" style="width:75px;height:75px;background:white;border-radius:50%;"></div>
+            <nav class="navigation">
+              <ul>
+                <li class="nav-item"><a href="">Hem</a></li>
+                <li class="nav-item"><a href="">Meny</a></li>
+                <li class="nav-item"><a href="">Reservera</a></li>
+                <li class="nav-item"><a href="">Om oss</a></li>
+                <li class="nav-item"><a href="">Kontakt</a></li>
+              </ul>
+            </nav>
+          </div>
+        </header>
 
-                <nav id="navigation">
-                    <li class="nav-item">Hem</li>
-                    <li class="nav-item">Meny</li>
-                    <li class="nav-item">Reservera</li>
-                    <li class="nav-item">Om oss</li>
-                    <li class="nav-item">Kontakt</li>
-                </nav>
-            </header>
+        <div id="above-fold-content">
+          <h1>Lyxig Snabbmat</h1>
+          <p>Även de rika förtjänar snabbmat</p>
 
-            above-fold
-        </section>
+          <button id="above-fold-content-btn">
+            <a href="">BESTÄLL NU</a>
+          </button>
+        </div>
+      </section>
 
-        <section id="welcome">welcome</section>
-        <section id="menu">menu</section>
-        <section id="pizza-divider">pizza-divider</section>
-        <section id="location-info">location-info</section>
-        <section id="reservation">reservation</section>
-        <section id="ratings">ratings</section>
-        <section id="mailing-list">mailing-list</section>
+      <section id="welcome">
+        <div id="welcome-text">
+          <h2>Välkommen,</h2>
+          <p>
+            Enim commodi et eveniet odio. Quidem saepe error et. Necessitatibus
+            voluptates omnis qui tenetur. Non qui tenetur exercitationem itaque
+            minus autem aspernatur rerum. Dolorem minima quia fugit eveniet sed.
+            Tenetur dolor nobis corrupti.
+          </p>
+        </div>
 
-        <footer id="footer">footer</footer>
+        <div id="welcome-image">
+          <img
+            src="./img/welcome_happy_people.png"
+            alt="Två glada personer sitter i bakgrunden av resturangen"
+          />
+        </div>
+      </section>
+
+      <section id="menu">
+        <div id="menu-image">
+          <img src="./img/pizza_from_side.png" alt="Large cutout pizza" />
+        </div>
+      </section>
+
+      <section id="pizza-divider"></section>
+      <section id="location-info"></section>
+      <section id="reservation"></section>
+      <section id="testimonials"></section>
+      <section id="mailing-list"></section>
+
+      <footer class="footer"></footer>
     </div>
 
-</body>
-
+    <script src="./js/header.js"></script>
+  </body>
 </html>
