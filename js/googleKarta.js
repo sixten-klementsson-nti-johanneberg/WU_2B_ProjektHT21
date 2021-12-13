@@ -1,12 +1,13 @@
 function initMap() {
-  const uluru = { lat: -25.344, lng: 131.036 };
+  const mcKinney = { lat: 32.80026, lng: -96.80048 };
 
   const map = new google.maps.Map(document.getElementById("map"), {
-    zoom: 4,
-    center: uluru,
+    zoom: 16,
+    center: mcKinney,
+    controlSize: 32,
   });
   const marker = new google.maps.Marker({
-    position: uluru,
+    position: mcKinney,
     map: map,
   });
 }

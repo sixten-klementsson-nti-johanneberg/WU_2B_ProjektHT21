@@ -4,6 +4,10 @@
   --dark: #1b1b1b;
 }
 
+*:not(#map *) {
+  color: var(--light);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -30,12 +34,16 @@ h2 {
   font-size: 4.5rem;
 }
 
+h3 {
+  font-size: 3rem;
+}
+
 p,
 a {
   font-size: 1.875rem;
 }
 
-button {
+button:not(#map *) {
   width: 370px;
   height: 80px;
 
@@ -299,12 +307,29 @@ body {
 }
 
 #map {
-  width: 620px;
-  height: 405px;
+  width: 615px;
+  height: 411px;
+  filter: sepia(10%);
+
+  box-shadow: -26px 32px var(--dark);
+  border-radius: 20px;
 }
 
 #location-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
   grid-area: li;
+}
+
+#location-info-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  padding: 0px 150px 0px 0px;
+  height: 280px;
 }
 
 #mailing-list {
