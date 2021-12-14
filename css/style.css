@@ -1,5 +1,6 @@
 :root {
   --primary: #b21e1e;
+  --primary-dark: #991a1a;
   --light: #f5ebd3;
   --dark: #1b1b1b;
 }
@@ -14,6 +15,12 @@
   box-sizing: border-box;
   color: var(--light);
   font-family: "Montserrat", sans-serif;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  max-width: 100%;
 }
 
 h1,
@@ -39,303 +46,25 @@ h3 {
 }
 
 p,
-a {
+a,
+li {
   font-size: 1.875rem;
 }
 
+button {
+  background: var(--primary);
+}
+
 button:not(#map *) {
+  display: inline-block;
   width: 370px;
   height: 80px;
 
-  background: var(--primary);
+  font-size: 1.875rem;
   border-radius: 20px;
   border: none;
 }
 
-button a {
-  text-decoration: none;
-}
-
-body {
-  width: 100vw;
-  height: 100vh;
-  max-width: 100%;
-}
-
-#dark-filler {
-  width: 100%;
-  height: 100%;
-  background: var(--dark);
-}
-
-#home-grid-wrapper {
-  display: grid;
-  grid-template-columns: minmax(80px, 1fr) minmax(200px, 1520px) minmax(
-      80px,
-      1fr
-    );
-  grid-template-rows: minmax(100vh, 1000px) 645px 1000px 370px 645px 1000px 645px 830px 500px;
-
-  grid-template-areas:
-    "af af af"
-    ". we ."
-    "me me me"
-    "pd pd pd"
-    ". te ."
-    "re re re"
-    ". li ."
-    ". ml ml"
-    ". fo .";
-
-  background: var(--primary);
-}
-
-.header {
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-
-  position: absolute;
-  top: 0;
-
-  height: 150px;
-  width: 100%;
-  background: none;
-  z-index: 10;
-}
-
-.header-onscroll {
-  position: fixed;
-  background: var(--dark);
-
-  align-items: center;
-  height: 90px;
-
-  transition: all 0.25s ease;
-}
-
-.inner-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
-  width: 100%;
-  max-width: 1520px;
-  min-width: 200px;
-  margin: 0 200px;
-}
-
-.navigation {
-  width: 100%;
-  max-width: 900px;
-}
-
-.navigation ul {
-  display: flex;
-  justify-content: space-between;
-
-  list-style: none;
-
-  width: 100%;
-  font-size: 1.9rem;
-}
-
-.navigation ul a {
-  text-decoration: none;
-}
-
-.navigation ul a:hover {
-  color: var(--primary);
-}
-
-#above-fold {
-  background-color: #000000;
-  background-image: url("../img/home_background.png");
-  background-size: cover;
-
-  width: 100%;
-  grid-area: af;
-}
-
-#above-fold-content {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-
-  height: 100%;
-  width: 100%;
-  min-width: 200px;
-  max-width: 1520px;
-  margin: 0 200px;
-}
-
-#above-fold-content-btn {
-  margin-top: 80px;
-}
-
-#welcome {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
-  grid-area: we;
-}
-
-#welcome-text {
-  width: 750px;
-}
-
-#welcome-image img {
-  box-shadow: 26px 32px var(--dark);
-  border-radius: 20px;
-}
-
-#menu {
-  display: grid;
-  grid-template-columns: minmax(80px, 1fr) minmax(200px, 1520px) minmax(
-      80px,
-      1fr
-    );
-  grid-template-rows: 100%;
-  gap: 20px;
-  grid-template-areas: "mi mr .";
-
-  grid-area: me;
-  background: var(--dark);
-}
-
-#menu-image {
-  grid-area: mi;
-}
-
-#menu-image,
-#menu-image img {
-  height: 100%;
-}
-
-#menu-right {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-end;
-
-  grid-area: mr;
-}
-
-#menu-right p {
-  max-width: 650px;
-  text-align: right;
-}
-
-#menu-btn {
-  margin-top: 80px;
-}
-
-#pizza-divider {
-  grid-area: pd;
-  height: 100%;
-  overflow: hidden;
-}
-
-#pizza-divider img {
-  position: relative;
-  bottom: 300px;
-  width: 100%;
-  object-fit: cover;
-  object-position: bottom;
-}
-
-#testimonials {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
-  grid-area: te;
-}
-
-#testimonials-text {
-  width: 750px;
-}
-
-#testimonials-text-customer-wrapper {
-  display: flex;
-  justify-content: space-between;
-  width: 350px;
-  align-items: center;
-  margin-top: 30px;
-}
-
-#testimonials-text-customer {
-  font-style: italic;
-}
-
-#testimonials-text-line {
-  width: 50px;
-  height: 0;
-  border: 1px solid var(--light);
-}
-
-#testimonials-image img {
-  box-shadow: -26px 32px var(--dark);
-  border-radius: 20px;
-}
-#reservations {
-  grid-area: re;
-  background: var(--dark);
-}
-
-#reservations-inner {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
-  height: 100%;
-  width: 100%;
-  min-width: 200px;
-  max-width: 1520px;
-  margin: 0 200px;
-}
-
-#reservations-btn {
-  margin-top: 80px;
-}
-
-#reservations-image img {
-  width: 750px;
-  grid-area: re;
-  background: var(--dark);
-}
-
-#map {
-  width: 615px;
-  height: 411px;
-  filter: sepia(10%);
-
-  box-shadow: -26px 32px var(--dark);
-  border-radius: 20px;
-}
-
-#location-info {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
-  grid-area: li;
-}
-
-#location-info-text {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-
-  padding: 0px 150px 0px 0px;
-  height: 280px;
-}
-
-#mailing-list {
-  grid-area: ml;
-}
-
-#footer {
-  grid-area: fo;
+button:hover {
+  background: var(--primary-dark);
 }

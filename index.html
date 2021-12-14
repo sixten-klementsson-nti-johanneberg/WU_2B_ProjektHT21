@@ -1,160 +1,201 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Arvo:wght@700&family=Montserrat:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
 
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content=width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/style.css" />
-    <title>Lyxig Snabbmat</title>
-  </head>
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Arvo:wght@700&family=Montserrat:wght@400;700&display=swap"
+    rel="stylesheet" />
 
-  <body>
-    <div id="home-grid-wrapper">
-      <section id="above-fold">
-        <header class="header">
-          <div class="inner-header">
-            <div
-              class="header-logo"
-              style="
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content=width=device-width, initial-scale=1.0" />
+
+  <link rel="stylesheet" href="./css/components.css" />
+  <link rel="stylesheet" href="./css/home.css" />
+  <link rel="stylesheet" href="./css/style.css" />
+
+  <title>Lyxig Snabbmat</title>
+</head>
+
+<body>
+  <div id="home-grid-wrapper">
+    <section id="above-fold">
+      <header class="header">
+        <div class="inner-header">
+          <div class="header-logo" style="
                 width: 75px;
                 height: 75px;
                 background: #f5ebd3;
                 border-radius: 50%;
-              "
-            ></div>
+              "></div>
 
-            <nav class="navigation">
-              <ul>
-                <li class="nav-item"><a href="">Hem</a></li>
-                <li class="nav-item"><a href="">Meny</a></li>
-                <li class="nav-item"><a href="">Reservera</a></li>
-                <li class="nav-item"><a href="">Om oss</a></li>
-                <li class="nav-item"><a href="">Kontakt</a></li>
-              </ul>
-            </nav>
-          </div>
-        </header>
+          <nav class="navigation">
+            <ul>
+              <li class="nav-item nav-item-active"><a href="">Hem</a></li>
+              <li class="nav-item"><a href="">Meny</a></li>
+              <li class="nav-item"><a href="">Reservera</a></li>
+              <li class="nav-item"><a href="">Om oss</a></li>
+              <li class="nav-item"><a href="">Kontakt</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
 
-        <div id="above-fold-content">
-          <h1>Lyxig Snabbmat</h1>
-          <p>Även de rika förtjänar snabbmat</p>
-
-          <button id="above-fold-content-btn">
-            <a href="">BESTÄLL NU</a>
+      <div id="above-fold-content">
+        <h1>Lyxig Snabbmat</h1>
+        <p>Även de rika förtjänar snabbmat</p>
+        <a id="above-fold-content-btn" href="">
+          <button>
+            BESTÄLL NU
           </button>
-        </div>
-      </section>
+        </a>
+      </div>
+    </section>
 
-      <section id="welcome">
-        <div id="welcome-text">
-          <h2>Välkommen,</h2>
-          <p>
-            Enim commodi et eveniet odio. Quidem saepe error et. Necessitatibus
-            voluptates omnis qui tenetur. Non qui tenetur exercitationem itaque
-            minus autem aspernatur rerum. Dolorem minima quia fugit eveniet sed.
-            Tenetur dolor nobis corrupti.
-          </p>
-        </div>
+    <section id="welcome">
+      <div id="welcome-text">
+        <h2>Välkommen,</h2>
+        <p>
+          Enim commodi et eveniet odio. Quidem saepe error et. Necessitatibus
+          voluptates omnis qui tenetur. Non qui tenetur exercitationem itaque
+          minus autem aspernatur rerum. Dolorem minima quia fugit eveniet sed.
+          Tenetur dolor nobis corrupti.
+        </p>
+      </div>
 
-        <div id="welcome-image">
-          <img
-            src="./img/welcome_happy_people.png"
-            alt="Två glada personer sitter i bakgrunden av resturangen"
-          />
-        </div>
-      </section>
+      <div id="welcome-image">
+        <img src="./img/welcome_happy_people.png" alt="Två glada personer sitter i bakgrunden av resturangen" />
+      </div>
+    </section>
 
-      <section id="menu">
-        <div id="menu-image">
-          <img src="./img/pizza_from_side.png" alt="En rund utklipp pizza" />
-        </div>
+    <section id="menu">
+      <div id="menu-image">
+        <img src="./img/pizza_from_side.png" alt="En rund utklipp pizza" />
+      </div>
 
-        <div id="menu-right">
-          <h2>Prisvärdig mat</h2>
+      <div id="menu-right">
+        <h2>Prisvärdig mat</h2>
+        <p>Enim commodi et eveniet odio. Quidem saepe error et.</p>
+        <a id="menu-btn" href=""><button>UTFORSKA MENYN</button></a>
+      </div>
+    </section>
+
+    <section id="testimonials">
+      <div id="testimonials-image">
+        <img src="./img/testimonial_woman.png" alt="En nöjd kund sitter på en stol med resturangen i bakgrunden" />
+      </div>
+
+      <div id="testimonials-text">
+        <p>
+          “Det var en fantastisk upplevelse med en mycket välkomnande och
+          charmig atmosfär. Personalen är kunnig och ger bra
+          rekommendationer.”
+        </p>
+
+        <div id="testimonials-text-customer-wrapper">
+          <span id="testimonials-text-line"></span>
+          <p id="testimonials-text-customer">Elizabeth Holmes</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="reservations">
+      <div id="reservations-inner">
+        <div id="reservations-left">
+          <h2>De bästa borden</h2>
           <p>Enim commodi et eveniet odio. Quidem saepe error et.</p>
-          <button id="menu-btn"><a href="">UTFORSKA MENYN</a></button>
-        </div>
-      </section>
-
-      <section id="pizza-divider">
-        <img src="./img/greasy_pizza.jpg" alt="Närbild av en flottig pizza" />
-      </section>
-
-      <section id="testimonials">
-        <div id="testimonials-image">
-          <img
-            src="./img/testimonial_woman.png"
-            alt="En nöjd kund sitter på en stol med resturangen i bakgrunden"
-          />
+          <a id="reservations-btn" href=""><button>RESERVERA NU</button></a>
+          </a>
         </div>
 
-        <div id="testimonials-text">
-          <p>
-            “Det var en fantastisk upplevelse med en mycket välkomnande och
-            charmig atmosfär. Personalen är kunnig och ger bra
-            rekommendationer.”
-          </p>
-
-          <div id="testimonials-text-customer-wrapper">
-            <span id="testimonials-text-line"></span>
-            <p id="testimonials-text-customer">Elizabeth Holmes</p>
-          </div>
+        <div id="reservations-image">
+          <img src="./img/burger.png" alt="En utklipp hamburgare" />
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section id="reservations">
-        <div id="reservations-inner">
-          <div id="reservations-left">
-            <h2>De bästa borden</h2>
-            <p>Enim commodi et eveniet odio. Quidem saepe error et.</p>
-            <button id="reservations-btn"><a href="">RESERVERA NU</a></button>
-          </div>
+    <section id="location-info">
+      <div id="map"></div>
 
-          <div id="reservations-image">
-            <img src="./img/burger.png" alt="En utklipp hamburgare" />
-          </div>
+      <div id="location-info-text">
+        <div id="location-info-text-hours">
+          <h3>Öppetider</h3>
+          <p>Söndag - Torsdag: 16 - 02</p>
+          <p>Fredag - Lördag: 18 - 03</p>
         </div>
-      </section>
 
-      <section id="location-info">
-        <div id="map"></div>
+        <div id="location-info-text-location">
+          <h3>Hitta hit</h3>
+          <p>2916 McKinney Ave, Dallas</p>
+        </div>
+      </div>
+    </section>
 
-        <div id="location-info-text">
-          <div id="location-info-text-hours">
+    <section id="mailing-list">
+      <div id="mailing-list-left">
+        <h2>Prenumerera på vårt nyhetsbrev</h2>
+
+        <div id="mailing-list-form">
+          <input id="mailing-list-input" type="text" placeholder="Skriv in din mejl">
+          <a id="mailing-list-btn" href=""><button>SKICKA IN</button></a></a>
+        </div>
+      </div>
+
+      <img src="./img/kitchen_insight.png" alt="Blick in i köket där en arbetare står med ryggen mot kameran" />
+    </section>
+
+    <footer class="footer">
+      <div class="footer-upper">
+        <div class="footer-section">
+          <h3>Restaurang</h3>
+          <ul>
+            <li><a href="/index.html">Meny</a></li>
+            <li><a href="">Reservera</a></li>
+            <li><a href="">Beställ</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer-section footer-location">
             <h3>Öppetider</h3>
-            <p>Söndag - Torsdag: 16 - 02</p>
-            <p>Fredag - Lördag: 18 - 03</p>
+            <ul>
+              <li>Söndag - Torsdag: 16 - 02</li>
+              <li>Fredag - Lördag: 18 - 03 </li>
+            </ul>
           </div>
 
-          <div id="location-info-text-location">
+          <div class="footer-section">
             <h3>Hitta hit</h3>
-            <p>2916 McKinney Ave, Dallas</p>
+            <ul>
+              <li>2916 McKinney Ave, Dallas</li>
+            </ul>
           </div>
         </div>
-      </section>
-      <section id="mailing-list"></section>
+        <div class="footer-section">
+          <h3>Policies</h3>
+          <ul>
+            <li><a href="">Integritetspolicy</a></li>
+            <li><a href="">Användarvillkor</a></li>
+            <li><a href="">Kakor</a> </li>
+          </ul>
+        </div>
+      </div>
 
-      <footer class="footer"></footer>
-    </div>
+      <div class="footer-lower">
+        <div class="footer-copyright">
+          <p>© 2021 Lyxig Snabbmat</p>
+        </div>
+      </div>
+    </footer>
+  </div>
 
-    <!-- För att skapa parallax effekten, gör möjligtvis en egen variant senare -->
-    <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.5.1/dist/simpleParallax.min.js"></script>
+  <!-- Google maps kartan som finns på hemsidan -->
+  <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDydDuwX_kVC03dY99XeSGP-462jcXhOE4&callback=initMap&libraries=&v=weekly"
+    async></script>
 
-    <!-- Google maps kartan som finns på hemsidan -->
-    <script
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDydDuwX_kVC03dY99XeSGP-462jcXhOE4&callback=initMap&libraries=&v=weekly"
-      async
-    ></script>
+  <script src="./js/header.js"></script>
+  <script src="./js/googleKarta.js"></script>
+</body>
 
-    <script src="./js/header.js"></script>
-    <script src="./js/pizzaParallax.js"></script>
-    <script src="./js/googleKarta.js"></script>
-  </body>
 </html>

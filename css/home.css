@@ -1,0 +1,245 @@
+#home-grid-wrapper {
+  display: grid;
+  grid-template-columns: minmax(80px, 1fr) minmax(200px, 1520px) minmax(
+      80px,
+      1fr
+    );
+  grid-template-rows: minmax(100vh, 1000px) 645px 1000px 645px 1000px 645px 830px 600px;
+
+  grid-template-areas:
+    "af af af"
+    ". we ."
+    "me me me"
+    ". te ."
+    "re re re"
+    ". li ."
+    "ml ml ml"
+    ". fo .";
+
+  background: var(--primary);
+}
+
+#above-fold {
+  background-color: #000000;
+  background-image: url("../img/home_background.png");
+  background-size: cover;
+
+  width: 100%;
+  grid-area: af;
+}
+
+#above-fold-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  height: 100%;
+  width: 100%;
+  min-width: 200px;
+  max-width: 1520px;
+  margin: 0 200px;
+}
+
+#above-fold-content-btn {
+  margin-top: 80px;
+}
+
+#welcome {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  grid-area: we;
+}
+
+#welcome-text {
+  width: 750px;
+}
+
+#welcome-image img {
+  box-shadow: 26px 32px var(--dark);
+  border-radius: 20px;
+}
+
+#menu {
+  display: grid;
+  grid-template-columns: minmax(80px, 1fr) minmax(200px, 1520px) minmax(
+      80px,
+      1fr
+    );
+  grid-template-rows: 100%;
+  gap: 20px;
+  grid-template-areas: "mi mr .";
+
+  grid-area: me;
+  background: var(--dark);
+}
+
+#menu-image {
+  grid-area: mi;
+}
+
+#menu-image,
+#menu-image img {
+  height: 100%;
+}
+
+#menu-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+
+  grid-area: mr;
+}
+
+#menu-right p {
+  max-width: 650px;
+  text-align: right;
+}
+
+#menu-btn {
+  margin-top: 80px;
+}
+
+#pizza-divider {
+  grid-area: pd;
+  height: 100%;
+  overflow: hidden;
+}
+
+#pizza-divider img {
+  position: relative;
+  bottom: 300px;
+  width: 100%;
+  object-fit: cover;
+  object-position: bottom;
+}
+
+#testimonials {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  grid-area: te;
+}
+
+#testimonials-text {
+  width: 750px;
+}
+
+#testimonials-text-customer-wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 350px;
+  align-items: center;
+  margin-top: 30px;
+}
+
+#testimonials-text-customer {
+  font-style: italic;
+}
+
+#testimonials-text-line {
+  width: 50px;
+  height: 0;
+  border: 1px solid var(--light);
+}
+
+#testimonials-image img {
+  box-shadow: -26px 32px var(--dark);
+  border-radius: 20px;
+}
+#reservations {
+  grid-area: re;
+  background: var(--dark);
+}
+
+#reservations-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  height: 100%;
+  width: 100%;
+  min-width: 200px;
+  max-width: 1520px;
+  margin: 0 200px;
+}
+
+#reservations-btn button {
+  margin-top: 80px;
+}
+
+#reservations-image img {
+  width: 750px;
+  grid-area: re;
+  background: var(--dark);
+}
+
+#map {
+  width: 615px;
+  height: 411px;
+  filter: sepia(10%);
+
+  box-shadow: -26px 32px var(--dark);
+  border-radius: 20px;
+}
+
+#location-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  grid-area: li;
+}
+
+#location-info-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  padding: 0px 150px 0px 0px;
+  height: 280px;
+}
+
+#mailing-list {
+  display: flex;
+  justify-content: center;
+
+  padding-left: 200px;
+  width: 100%;
+
+  background: var(--dark);
+  grid-area: ml;
+}
+
+#mailing-list-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+
+  width: 100%;
+}
+
+#mailing-list-left h2 {
+  width: 700px;
+}
+
+#mailing-list-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  width: 700px;
+  height: 200px;
+}
+
+#mailing-list-input {
+  background: none;
+  border: none;
+  border-bottom: 4px solid var(--light);
+  font-size: 3rem;
+  width: 100%;
+}

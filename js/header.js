@@ -1,6 +1,6 @@
 let header = document.querySelector(".header");
 
-let scrollLimit = 60;
+let scrollLimit = 70;
 
 document.addEventListener(
   "scroll",
