@@ -1,9 +1,0 @@
-#menu-grid-wrapper {
-  display: grid;
-  grid-template-rows: 600px;
-
-  grid-template-areas:
-    "he"
-    ""
-    "fo";
-}

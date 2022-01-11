@@ -67,3 +67,550 @@ button:not(#map *) {
 button:hover {
   background: var(--primary-dark);
 }
+
+#home-grid-wrapper {
+  display: grid;
+  grid-template-rows: minmax(100vh, 1000px) 645px 750px 645px 1000px 645px 830px 600px;
+  grid-template-columns: 100%;
+
+  grid-template-areas:
+    "af"
+    "we"
+    "me"
+    "te"
+    "re"
+    "li"
+    "ml"
+    "fo";
+}
+
+#above-fold,
+#welcome,
+#reservations,
+#location-info,
+#testimonials,
+#mailing-list,
+#menu-main,
+.about-main,
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#above-fold-content,
+#reservations-inner,
+#welcome-inner,
+#testimonials-inner,
+#location-info-inner,
+#mailing-list-inner,
+#menu-main-inner,
+.about-main-inner,
+.header-inner,
+.footer-inner {
+  width: 100%;
+  max-width: 1520px;
+  margin: 0 100px;
+}
+
+#testimonials-image,
+#welcome-image,
+.about-image {
+  width: 100%;
+  min-width: 400px;
+  max-width: 600px;
+}
+
+#above-fold {
+  background-color: #000000;
+  background-image: url("../img/home_background.png");
+  background-size: cover;
+
+  width: 100%;
+  grid-area: af;
+}
+
+#above-fold-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  height: 100%;
+}
+
+#above-fold-content-btn {
+  margin-top: 80px;
+}
+
+#welcome {
+  background: var(--primary);
+  grid-area: we;
+}
+
+#welcome-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 100%;
+}
+
+#welcome-text {
+  max-width: 750px;
+}
+
+#welcome-image {
+  margin-left: 20px;
+}
+
+#welcome-image img {
+  box-shadow: 26px 32px var(--dark);
+  border-radius: 20px;
+  width: 100%;
+}
+
+#menu {
+  display: grid;
+  grid-template-columns: minmax(80px, 1fr) minmax(200px, 1520px) minmax(
+      80px,
+      1fr
+    );
+  grid-template-rows: 100%;
+  gap: 20px;
+  grid-template-areas: "mi mr .";
+
+  grid-area: me;
+  background: var(--dark);
+}
+
+#menu-image {
+  grid-area: mi;
+}
+
+#menu-image,
+#menu-image img {
+  height: 100%;
+}
+
+#menu-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+
+  grid-area: mr;
+}
+
+#menu-right p {
+  max-width: 650px;
+  text-align: right;
+}
+
+#menu-btn {
+  margin-top: 80px;
+}
+
+#testimonials {
+  background: var(--primary);
+  grid-area: te;
+}
+
+#testimonials-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#testimonials-text {
+  max-width: 750px;
+}
+
+#testimonials-text-customer-wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 350px;
+  align-items: center;
+  margin-top: 30px;
+}
+
+#testimonials-text-customer {
+  font-style: italic;
+}
+
+#testimonials-text-line {
+  width: 50px;
+  height: 0;
+  border: 1px solid var(--light);
+}
+
+#testimonials-image {
+  margin-right: 20px;
+}
+
+#testimonials-image img {
+  box-shadow: -26px 32px var(--dark);
+  border-radius: 20px;
+  width: 100%;
+}
+
+#reservations {
+  grid-area: re;
+  background: var(--dark);
+}
+
+#reservations-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#reservations-btn button {
+  margin-top: 80px;
+}
+
+#reservations-image img {
+  max-width: 750px;
+  width: 100%;
+}
+
+#map {
+  width: 615px;
+  height: 411px;
+  filter: sepia(10%);
+
+  box-shadow: -26px 32px var(--dark);
+  border-radius: 20px;
+}
+
+#location-info {
+  background: var(--primary);
+  grid-area: li;
+}
+
+#location-info-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#location-info-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  padding-left: 20px;
+  height: 280px;
+}
+
+#mailing-list {
+  background: var(--dark);
+  grid-area: ml;
+}
+
+#mailing-list-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+#mailing-list-h2 {
+  margin-bottom: 80px;
+}
+
+#mailing-list-h2 h2 {
+  padding-bottom: 15px;
+}
+
+#mailing-list-bar {
+  width: 200px;
+  height: 20px;
+  background-color: var(--primary);
+}
+
+#mailing-list-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  max-width: 1520px;
+  width: 800px;
+  height: 200px;
+}
+
+#mailing-list-input {
+  background: none;
+  border: none;
+  border-bottom: 4px solid var(--light);
+  font-size: 3rem;
+  width: 100%;
+}
+
+#menu-grid-wrapper {
+  display: grid;
+  grid-template-rows: 90px 300px 900px 600px;
+
+  grid-template-areas:
+    "."
+    "mh"
+    "ma"
+    "fo";
+}
+
+#menu-headline {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--dark);
+  background-image: url("../img/burger_menu.png");
+  background-size: cover;
+
+  grid-area: mh;
+}
+
+#menu-headline h1 {
+  font-size: 6rem;
+}
+
+#menu-main {
+  background: var(--dark);
+  grid-area: ma;
+}
+
+#menu-main-inner {
+  display: grid;
+  grid-template-areas: "ul ur" "ll lr";
+  grid-template-rows: 360px 360px;
+  grid-template-columns: 1fr 1fr;
+}
+
+.menu-main-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu-main-inner-item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 80%;
+  max-width: 600px;
+}
+
+.menu-main-item li {
+  list-style: none;
+}
+
+.menu-main-items-wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.menu-main-item-bar {
+  width: 200px;
+  height: 18px;
+  background: var(--primary);
+}
+
+#menu-item-upper-left {
+  grid-area: ul;
+}
+
+#menu-item-upper-right {
+  grid-area: ur;
+}
+
+#menu-item-lower-left {
+  grid-area: ll;
+}
+
+#menu-item-lower-right {
+  grid-area: lr;
+}
+
+#about-grid-wrapper {
+  display: grid;
+  grid-template-rows: 90px 300px 700px 700px 600px;
+
+  grid-template-areas:
+    "."
+    "ah"
+    "aw"
+    "aj"
+    "fo";
+}
+
+#about-headline {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--dark);
+  background-image: url("../img/bar.png");
+  background-size: cover;
+
+  grid-area: ah;
+}
+
+#about-who {
+  grid-area: aw;
+}
+
+#about-journey {
+  grid-area: aj;
+}
+
+.about-main {
+  background: var(--dark);
+  grid-area: am;
+}
+
+.about-main-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.about-text {
+  max-width: 750px;
+}
+
+.about-text h2 {
+  margin-bottom: 30px;
+}
+
+.about-image-left {
+  margin-right: 20px;
+}
+
+.about-image-right {
+  margin-left: 20px;
+}
+
+.about-image img {
+  border-radius: 20px;
+  width: 100%;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+
+  position: absolute;
+  top: 0;
+
+  height: 150px;
+  width: 100%;
+  background: none;
+  z-index: 10;
+}
+
+.header-logo img {
+  width: 100px;
+  height: 100px;
+}
+
+.header-onscroll {
+  position: fixed;
+  background: var(--dark);
+
+  align-items: center;
+  height: 90px;
+
+  transition: height 0.25s ease;
+}
+
+.header-onscroll .header-logo img {
+  width: 75px;
+  height: 75px;
+  transition: all 0.25s ease;
+}
+
+.header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 100%;
+}
+
+.navigation {
+  width: 100%;
+  max-width: 700px;
+}
+
+.navigation ul {
+  display: flex;
+  justify-content: space-between;
+
+  list-style: none;
+
+  width: 100%;
+  font-size: 1.9rem;
+}
+
+.navigation ul a {
+  text-decoration: none;
+}
+
+.navigation ul a:hover,
+.nav-item-active {
+  text-decoration: underline;
+}
+
+.footer {
+  height: 600px;
+  width: 100%;
+
+  background: var(--primary);
+
+  grid-area: fo;
+}
+
+.footer-inner {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 1fr 25px;
+  height: 100%;
+  width: 100%;
+
+  grid-template-areas: "fu" "fl";
+}
+
+.footer-upper {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 110px;
+
+  grid-area: fu;
+}
+
+.footer-section h3 {
+  margin-bottom: 15px;
+}
+
+.footer-section li {
+  list-style: none;
+  margin-top: 4px;
+}
+
+.footer-lower {
+  grid-area: fl;
+}
+
+.footer-location {
+  margin-bottom: 50px;
+}
+
+.footer-copyright {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-copyright p {
+  font-size: 1rem;
+}
