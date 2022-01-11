@@ -39,15 +39,12 @@
   transition: all 0.25s ease;
 }
 
-.inner-header {
+.header-inner {
   display: flex;
   justify-content: space-between;
   align-items: center;
 
   width: 100%;
-  max-width: 1520px;
-  min-width: 200px;
-  margin: 0 200px;
 }
 
 .navigation {
@@ -81,15 +78,22 @@
  */
 
 .footer {
+  height: 600px;
+  width: 100%;
+
+  background: var(--primary);
+
+  grid-area: fo;
+}
+
+.footer-inner {
   display: grid;
   grid-template-columns: 100%;
   grid-template-rows: 1fr 25px;
-
+  height: 100%;
   width: 100%;
-  height: 600px;
-  grid-template-areas: "fu" "fl";
 
-  grid-area: fo;
+  grid-template-areas: "fu" "fl";
 }
 
 .footer-upper {

@@ -1,4 +1,4 @@
-let header = document.querySelector(".header");
+let header = document.querySelector("#home-header");
 
 let scrollLimit = 70;
 

@@ -21,8 +21,8 @@
 <body>
   <div id="home-grid-wrapper">
     <section id="above-fold">
-      <header class="header">
-        <div class="inner-header">
+      <header id="home-header" class="header">
+        <div class="header-inner">
           <div class="header-logo">
             <img src="./img/logo_lyxig-snabbmat.jpg" alt="LSM logo">
 
@@ -31,7 +31,7 @@
           <nav class="navigation">
             <ul>
               <li class="nav-item nav-item-active"><a href="">Hem</a></li>
-              <li class="nav-item"><a href="">Meny</a></li>
+              <li class="nav-item"><a href="/menu.html">Meny</a></li>
               <li class="nav-item"><a href="">Reservera</a></li>
               <li class="nav-item"><a href="">Om oss</a></li>
               <li class="nav-item"><a href="">Kontakt</a></li>
@@ -52,18 +52,20 @@
     </section>
 
     <section id="welcome">
-      <div id="welcome-text">
-        <h2>Välkommen,</h2>
-        <p>
-          Enim commodi et eveniet odio. Quidem saepe error et. Necessitatibus
-          voluptates omnis qui tenetur. Non qui tenetur exercitationem itaque
-          minus autem aspernatur rerum. Dolorem minima quia fugit eveniet sed.
-          Tenetur dolor nobis corrupti.
-        </p>
-      </div>
+      <div id="welcome-inner">
+        <div id="welcome-text">
+          <h2>Välkommen,</h2>
+          <p>
+            Enim commodi et eveniet odio. Quidem saepe error et. Necessitatibus
+            voluptates omnis qui tenetur. Non qui tenetur exercitationem itaque
+            minus autem aspernatur rerum. Dolorem minima quia fugit eveniet sed.
+            Tenetur dolor nobis corrupti.
+          </p>
+        </div>
 
-      <div id="welcome-image">
-        <img src="./img/welcome_happy_people.png" alt="Två glada personer sitter i bakgrunden av resturangen" />
+        <div id="welcome-image">
+          <img src="./img/welcome_happy_people.png" alt="Två glada personer sitter i bakgrunden av resturangen" />
+        </div>
       </div>
     </section>
 
@@ -80,20 +82,22 @@
     </section>
 
     <section id="testimonials">
-      <div id="testimonials-image">
-        <img src="./img/testimonial_woman.png" alt="En nöjd kund sitter på en stol med resturangen i bakgrunden" />
-      </div>
+      <div id="testimonials-inner">
+        <div id="testimonials-image">
+          <img src="./img/testimonial_woman.png" alt="En nöjd kund sitter på en stol med resturangen i bakgrunden" />
+        </div>
 
-      <div id="testimonials-text">
-        <p>
-          “Det var en fantastisk upplevelse med en mycket välkomnande och
-          charmig atmosfär. Personalen är kunnig och ger bra
-          rekommendationer.”
-        </p>
+        <div id="testimonials-text">
+          <p>
+            “Det var en fantastisk upplevelse med en mycket välkomnande och
+            charmig atmosfär. Personalen är kunnig och ger bra
+            rekommendationer.”
+          </p>
 
-        <div id="testimonials-text-customer-wrapper">
-          <span id="testimonials-text-line"></span>
-          <p id="testimonials-text-customer">Elizabeth Holmes</p>
+          <div id="testimonials-text-customer-wrapper">
+            <span id="testimonials-text-line"></span>
+            <p id="testimonials-text-customer">Elizabeth Holmes</p>
+          </div>
         </div>
       </div>
     </section>
@@ -114,74 +118,79 @@
     </section>
 
     <section id="location-info">
-      <div id="map"></div>
+      <div id="location-info-inner">
+        <div id="map"></div>
 
-      <div id="location-info-text">
-        <div id="location-info-text-hours">
-          <h3>Öppetider</h3>
-          <p>Söndag - Torsdag: 16 - 02</p>
-          <p>Fredag - Lördag: 18 - 03</p>
-        </div>
+        <div id="location-info-text">
+          <div id="location-info-text-hours">
+            <h3>Öppetider</h3>
+            <p>Söndag - Torsdag: 16 - 02</p>
+            <p>Fredag - Lördag: 18 - 03</p>
+          </div>
 
-        <div id="location-info-text-location">
-          <h3>Hitta hit</h3>
-          <p>2916 McKinney Ave, Dallas</p>
+          <div id="location-info-text-location">
+            <h3>Hitta hit</h3>
+            <p>2916 McKinney Ave, Dallas</p>
+          </div>
         </div>
       </div>
     </section>
 
     <section id="mailing-list">
-      <div id="mailing-list-left">
-        <h2>Prenumerera på vårt nyhetsbrev</h2>
+      <div id="mailing-list-inner">
+        <div id="mailing-list-h2">
+          <h2>Prenumerera på vårt nyhetsbrev</h2>
+          <div id="mailing-list-bar"></div>
+        </div>
 
         <div id="mailing-list-form">
           <input id="mailing-list-input" type="text" placeholder="Skriv in din mejl">
           <a id="mailing-list-btn" href=""><button>SKICKA IN</button></a></a>
         </div>
       </div>
-
-      <img src="./img/kitchen_insight.png" alt="Blick in i köket där en arbetare står med ryggen mot kameran" />
     </section>
 
     <footer class="footer">
-      <div class="footer-upper">
-        <div class="footer-section">
-          <h3>Restaurang</h3>
-          <ul>
-            <li><a href="/index.html">Meny</a></li>
-            <li><a href="">Reservera</a></li>
-            <li><a href="">Beställ</a></li>
-          </ul>
-        </div>
-        <div>
-          <div class="footer-section footer-location">
-            <h3>Öppetider</h3>
-            <ul>
-              <li>Söndag - Torsdag: 16 - 02</li>
-              <li>Fredag - Lördag: 18 - 03 </li>
-            </ul>
-          </div>
-
+      <div class="footer-inner">
+        <div class="footer-upper">
           <div class="footer-section">
-            <h3>Hitta hit</h3>
+            <h3>Restaurang</h3>
             <ul>
-              <li>2916 McKinney Ave, Dallas</li>
+              <li><a href="/index.html">Meny</a></li>
+              <li><a href="">Reservera</a></li>
+              <li><a href="">Beställ</a></li>
+            </ul>
+          </div>
+          <div>
+            <div class="footer-section footer-location">
+              <h3>Öppetider</h3>
+              <ul>
+                <li>Söndag - Torsdag: 16 - 02</li>
+                <li>Fredag - Lördag: 18 - 03 </li>
+              </ul>
+            </div>
+
+            <div class="footer-section">
+              <h3>Hitta hit</h3>
+              <ul>
+                <li>2916 McKinney Ave, Dallas</li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer-section">
+            <h3>Policies</h3>
+            <ul>
+              <li><a href="">Integritetspolicy</a></li>
+              <li><a href="">Användarvillkor</a></li>
+              <li><a href="">Kakor</a> </li>
             </ul>
           </div>
         </div>
-        <div class="footer-section">
-          <h3>Policies</h3>
-          <ul>
-            <li><a href="">Integritetspolicy</a></li>
-            <li><a href="">Användarvillkor</a></li>
-            <li><a href="">Kakor</a> </li>
-          </ul>
-        </div>
-      </div>
 
-      <div class="footer-lower">
-        <div class="footer-copyright">
-          <p>© 2021 Lyxig Snabbmat</p>
+        <div class="footer-lower">
+          <div class="footer-copyright">
+            <p>© 2021 Lyxig Snabbmat</p>
+          </div>
         </div>
       </div>
     </footer>
